@@ -1,8 +1,12 @@
 li {
     list-style: none;
     padding: 12px 16px;
-    font-size: 42px;
+    font-size: var(--responsive-font);
     line-height: 135%;
     color: var(--text); 
     background: var(--bg);
+    transform-origin: start;
+    transition-property: font-size;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 50ms;
 }

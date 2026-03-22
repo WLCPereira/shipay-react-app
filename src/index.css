@@ -58,10 +58,9 @@ h6 {
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --responsive-font: clamp(16px, 3vw, 28px);
 
   font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -143,5 +142,8 @@ input {
   line-height: 135%;
   color: var(--text-h);
   background: var(--bg);
+}
+.payments-filter {
+  margin-bottom: 24px;
 }
 
