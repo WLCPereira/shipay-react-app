@@ -1,6 +1,7 @@
 import { Children, startTransition, useActionState, useEffect, useMemo, useState } from 'react'
 import { matchesCaseInsensitive } from '@/utils/stringUtils'
 import { List, ListItem } from '@/components';
+import StatusNull from './components/global/status-null';
 
 export default function App() {
   const [paymentMethods, dispatchPaymentMethods, isPending] = useActionState<PaymentMethod[]>(fetchPaymentMethods, [])
@@ -39,15 +40,14 @@ export default function App() {
     <div>
       <div>
         <input
+          className='payments-filter'
           type="text"
-          placeholder="Search payment methods..."
+          placeholder="Filtrar métodos de pagamento"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <List>
-        {filterPaymentMethods}
-      </List>
+      {!filterPaymentMethods.length ? <StatusNull /> : <List>{filterPaymentMethods}</List>}
     </div>
   );
 

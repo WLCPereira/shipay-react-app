@@ -1,0 +1,10 @@
+.status-null {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: var(--responsive-font);
+  border: 1px solid var(--border);
+  min-height: 40svh;
+  padding: 24px;
+}
