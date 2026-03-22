@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid var(--border);
+  width: 100%;
+  margin-top: 24px;
+}
