@@ -103,3 +103,8 @@ test/
 - Listar métodos de pagamento
 - Buscar e filtrar métodos de pagamento
 - Interface responsiva e amigável
+
+
+## 🧩 Desafio
+
+As respostas para os desafios propostos estão disponíveis no arquivo **Challenge.md**. Recomendo a leitura para entender os pontos de melhoria e as soluções sugeridas para cada desafio.
